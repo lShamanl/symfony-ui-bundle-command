@@ -9,7 +9,7 @@ use Symfony\Component\DependencyInjection\Loader;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
-class UIExtension extends Extension
+class UICommandExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container): void
     {
