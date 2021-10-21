@@ -2,15 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle\Core\Service;
+namespace SymfonyBundle\UIBundle\Command\Core\Service;
 
-use Bundle\UIBundle\Core\Components\Exception\DomainException;
-use Bundle\UIBundle\Core\Contract\Command\InputContractInterface;
 use Symfony\Component\Serializer\SerializerInterface;
+use SymfonyBundle\UIBundle\Foundation\Core\Components\Exception\DomainException;
+use SymfonyBundle\UIBundle\Foundation\Core\Contract\InputContractInterface;
 
-/**
- * UIBundleCommand
- */
 class InputContractResolver
 {
     private ValidatorService $validator;

@@ -2,13 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle\Core\Components\Exception;
+namespace SymfonyBundle\UIBundle\Command\Core\Components\Exception;
 
+use SymfonyBundle\UIBundle\Foundation\Core\Components\Exception\DomainException;
 use Throwable;
 
-/**
- * UIBundleCommand
- */
 class ValidatorException extends DomainException
 {
     public function __construct(

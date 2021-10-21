@@ -2,17 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle\Core\CQRS\Command\Async;
+namespace SymfonyBundle\UIBundle\Command\Core\CQRS\Command\Async;
 
-use Bundle\UIBundle\Core\Components\AbstractContext;
-use Bundle\UIBundle\Core\Components\AbstractProcessor;
-use Bundle\UIBundle\Core\Contract\ApiFormatter;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\Serializer\SerializerInterface;
+use SymfonyBundle\UIBundle\Foundation\Core\Components\AbstractContext;
+use SymfonyBundle\UIBundle\Foundation\Core\Components\AbstractProcessor;
+use SymfonyBundle\UIBundle\Foundation\Core\Contract\ApiFormatter;
 
-/**
- * UIBundleCommand
- */
 class Processor extends AbstractProcessor
 {
     protected EventDispatcherInterface $dispatcher;

@@ -2,16 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle\Core\Service;
+namespace SymfonyBundle\UIBundle\Command\Core\Service;
 
-use Bundle\UIBundle\Core\Components\Exception\ValidatorException;
+use SymfonyBundle\UIBundle\Command\Core\Components\Exception\ValidatorException;
 use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Component\Validator\ConstraintViolationList;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 
-/**
- * UIBundleCommand
- */
 class ValidatorService
 {
     private ValidatorInterface $validator;

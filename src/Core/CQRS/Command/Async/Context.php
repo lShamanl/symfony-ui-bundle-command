@@ -2,15 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle\Core\CQRS\Command\Async;
+namespace SymfonyBundle\UIBundle\Command\Core\CQRS\Command\Async;
 
-use Bundle\UIBundle\Core\Components\AbstractContext;
-use Bundle\UIBundle\Core\Contract\Command\CommandInterface;
-use Bundle\UIBundle\Core\Contract\Command\HandlerInterface;
+use SymfonyBundle\UIBundle\Foundation\Core\Components\AbstractContext;
+use SymfonyBundle\UIBundle\Foundation\Core\Contract\CommandInterface;
+use SymfonyBundle\UIBundle\Foundation\Core\Contract\HandlerInterface;
 
-/**
- * UIBundleCommand
- */
 class Context extends AbstractContext
 {
     protected ?HandlerInterface $handler;

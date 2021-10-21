@@ -2,19 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle\ParamConverter;
+namespace SymfonyBundle\UIBundle\Command\ParamConverter;
 
-use Bundle\UIBundle\Core\Contract\Command\InputContractInterface;
-use Bundle\UIBundle\Core\Service\InputContractResolver;
-use Bundle\UIBundle\Core\Service\RequestParser;
+use SymfonyBundle\UIBundle\Command\Core\Service\InputContractResolver;
 use Generator;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Controller\ArgumentValueResolverInterface;
 use Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadata;
+use SymfonyBundle\UIBundle\Foundation\Core\Contract\InputContractInterface;
+use SymfonyBundle\UIBundle\Foundation\Core\Service\RequestParser;
 
-/**
- * UIBundleCommand
- */
 class ContractResolver implements ArgumentValueResolverInterface
 {
     private InputContractResolver $inputContractResolver;

@@ -2,17 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle\Core\CQRS\Command\Sync;
+namespace SymfonyBundle\UIBundle\Command\Core\CQRS\Command\Sync;
 
-use Bundle\UIBundle\Core\Components\AbstractContext;
-use Bundle\UIBundle\Core\Contract\Command\CommandInterface;
-use Bundle\UIBundle\Core\Contract\Command\HandlerInterface;
-use Bundle\UIBundle\Core\Dto\Locale;
-use Bundle\UIBundle\Core\Dto\TranslationDto;
+use SymfonyBundle\UIBundle\Foundation\Core\Components\AbstractContext;
+use SymfonyBundle\UIBundle\Foundation\Core\Contract\CommandInterface;
+use SymfonyBundle\UIBundle\Foundation\Core\Contract\HandlerInterface;
+use SymfonyBundle\UIBundle\Foundation\Core\Dto\Locale;
+use SymfonyBundle\UIBundle\Foundation\Core\Dto\TranslationDto;
 
-/**
- * UIBundleCommand
- */
 class Context extends AbstractContext
 {
     protected HandlerInterface $handler;

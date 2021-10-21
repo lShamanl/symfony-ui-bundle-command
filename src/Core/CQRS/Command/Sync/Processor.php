@@ -2,19 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle\Core\CQRS\Command\Sync;
+namespace SymfonyBundle\UIBundle\Command\Core\CQRS\Command\Sync;
 
-use Bundle\UIBundle\Core\Components\AbstractContext;
-use Bundle\UIBundle\Core\Components\AbstractProcessor;
-use Bundle\UIBundle\Core\Contract\ApiFormatter;
-use Bundle\UIBundle\Core\Contract\Command\OutputContractInterface;
-use Bundle\UIBundle\Core\Dto\Locale;
 use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Contracts\Translation\TranslatorInterface;
+use SymfonyBundle\UIBundle\Foundation\Core\Components\AbstractContext;
+use SymfonyBundle\UIBundle\Foundation\Core\Components\AbstractProcessor;
+use SymfonyBundle\UIBundle\Foundation\Core\Contract\ApiFormatter;
+use SymfonyBundle\UIBundle\Foundation\Core\Contract\OutputContractInterface;
+use SymfonyBundle\UIBundle\Foundation\Core\Dto\Locale;
 
-/**
- * UIBundleCommand
- */
 class Processor extends AbstractProcessor
 {
     protected SerializerInterface $serializer;
@@ -43,7 +40,7 @@ class Processor extends AbstractProcessor
             $actionContext->getCommand()
         );
 
-        if (isset($output) && !empty($actionContext->getTranslations()) && !empty($actionContext->getLocale())) {
+        if (isset($output) && !empty($actionContext->getTranslations()) && $actionContext->getLocale() !== null) {
             /** @var Locale $locale */
             $locale = $actionContext->getLocale();
             $output = $this->translate(
