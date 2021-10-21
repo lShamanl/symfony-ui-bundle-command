@@ -29,7 +29,7 @@
         "zircote/swagger-php": "^3.2",
         "ext-mbstring": "*",
         "symfony-bundles/bundle-dependency": "^1.0",
-        "lshamanl/symfony-ui-bundle-foundation": "^0.0.2"
+        "lshamanl/symfony-ui-bundle-foundation": "^0.1"
     },
     "require-dev": {
         "phpstan/phpstan": "^0.12.81",
