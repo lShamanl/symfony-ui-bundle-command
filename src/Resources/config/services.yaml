@@ -11,6 +11,3 @@ services:
     SymfonyBundle\UIBundle\Command\Core\Service\ValidatorService:
         class: SymfonyBundle\UIBundle\Command\Core\Service\ValidatorService
         public: true
-
-    SymfonyBundle\UIBundle\Command\Core\Dto\Locale:
-        arguments: [ '%locale%' ]
